@@ -1,0 +1,395 @@
+/* Typography */
+.text-center {
+  text-align: center;
+}
+
+.font-size-1-2rem {
+  font-size: 1.2rem;
+}
+
+.font-size-1rem {
+  font-size: 1rem;
+}
+
+/* Utility Classes */
+.text-left {
+  text-align: left;
+}
+span{
+    color: #000;
+    font-size: 1rem;
+}
+.background_contact h2{
+    width: 9rem;
+}
+
+.form-wrap{
+    overflow: hidden;
+    height: 30rem;
+    position: relative;
+    top: 0rem;
+    transition: all 1s ease-in-out .3s;
+}
+
+.form-wrap::after{
+    content: "";
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    background: url('../images/after_tiny.png');
+    width: 50rem;
+    height: 16.17rem;
+    background-repeat: no-repeat;
+}
+.form-wrap.hide:after, .form-wrap.hide:before{
+    display: none;
+}
+.form-wrap:hover{
+    height: 48rem;
+    top: -15rem;
+    margin-top: 10rem;
+}
+.form-wrap:hover form{
+    height: 32rem;
+}
+label{
+    margin: .5rem 1rem 0rem 0rem;
+    font-size: 1rem;
+    color: gray;
+    text-transform: uppercase;
+}
+input[type="text"], textarea{
+    font: 1rem normal uppercase, arial, serif;
+    color: dimgray;
+    background: none;
+    width: 8rem;
+    height: 1.3rem;
+    padding: 0rem .1rem;
+    margin: 0rem 0rem .1rem 0rem;
+    border: .1rem solid #000;
+    border-radius: .5rem;
+}
+input[type="email"], textarea{
+    font: 1rem normal uppercase, arial, serif;
+    color: dimgray;
+    background: none;
+    width: 8rem;
+    height: 1.3rem;
+    padding: 0rem .1rem;
+    margin: 0rem 0rem .1rem 0rem;
+    border: .1rem solid #000;
+    border-radius: .5rem;
+}
+
+@keyframes envelopeAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.form-wrap{
+    animation: envelopeAnimation 4s infinite;
+}
+
+.button {
+    background: #2A7697;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    margin: 10rem 4rem;
+    box-shadow: 0.5rem -0.6rem 0.8rem 0.5rem #2a76979c;
+}
+
+.button:hover {
+    background: #16526c;
+    transform: scale(1.1);
+}
+
+.button-form{
+    border: .1rem solid var(--border);
+    margin: 2rem 0;
+    color: var(--border);
+    padding: .5rem 2.4rem;
+    border-radius: 1.8rem;
+    font-size: 1.1rem;
+    background-color: var(--white);
+}
+.button-form:hover{
+    background-color: var(--border);
+    color: var(--white);
+    transition: all 1s ease-in-out;
+}
+form{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    position: relative;
+    top: 8rem;
+    overflow: hidden;
+    height: 14rem;
+    width: 16.5rem;
+    margin: 0rem auto;
+    padding: 2rem;
+    border: .5rem solid #fff;
+    border-radius: 1rem;
+    transition: all 1s ease-in-out .3s;
+    border: .3rem solid transparent;
+    border-image-slice: 1;
+    animation: rgbBorder 5s linear infinite alternate;
+}
+
+label{
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+input{
+    width: 19rem;
+    margin-bottom: 1rem;
+    background-color: #2a769768;
+}
+textarea{
+    height: 7rem;
+    background-color: #2a769768;
+    border: none;
+    width: 8rem;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.background-image{
+    height: 66rem;
+}
+.reverse-contact_info img{
+    width: 14rem;
+    height: 3rem;
+}
+
+.sending{
+    display: none;
+    width: 100%;
+    border: .2rem solid #2a769768;
+    color: #2A7697;
+    text-align: center;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+@keyframes rgbBorder {
+0% {
+    border-image-source: linear-gradient(45deg, #808080, #fff, #2A7697, #000, #808080);
+}
+25% {
+    border-image-source: linear-gradient(45deg, #fff, #2A7697, #000, #808080, #fff);
+}
+50% {
+    border-image-source: linear-gradient(45deg, #2A7697, #000, #808080, #fff, #2A7697);
+}
+75% {
+    border-image-source: linear-gradient(45deg, #000, #808080, #fff, #2A7697, #000);
+}
+100% {
+    border-image-source: linear-gradient(45deg, #808080, #fff, #2A7697, #000, #808080);
+}
+}
+
+
+/* Complex and crazy 3D box animation */
+
+.crazy-box-container {
+    perspective: 800px;
+    width: 200px;
+    height: 200px;
+    margin: 5rem auto;
+    animation: spin 10s linear infinite, bounce 4s ease-in-out infinite;
+}
+
+.crazy-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spinReverse 5s linear infinite reverse;
+}
+
+.crazy-box-face {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transform: scale(1.2);
+    animation: colorChange 5s linear infinite alternate;
+}
+
+.front { transform: translateZ(100px); animation: colorChange 5s linear infinite alternate, rotateFace 10s linear infinite alternate; }
+.back { transform: rotateY(180deg) translateZ(100px); animation: colorChange 5s linear infinite alternate, rotateFace 10s linear infinite alternate; }
+.left { transform: rotateY(-90deg) translateZ(100px); animation: colorChange 5s linear infinite alternate, rotateFace 10s linear infinite alternate; }
+.right { transform: rotateY(90deg) translateZ(100px); animation: colorChange 5s linear infinite alternate, rotateFace 10s linear infinite alternate; }
+.top { transform: rotateX(90deg) translateZ(100px); animation: colorChange 5s linear infinite alternate, rotateFace 10s linear infinite alternate; }
+.bottom { transform: rotateX(-90deg) translateZ(100px); animation: colorChange 5s linear infinite alternate, rotateFace 10s linear infinite alternate; }
+
+@keyframes spin {
+    0% { transform: rotateY(0); }
+    100% { transform: rotateY(360deg); }
+}
+
+@keyframes spinReverse {
+    0% { transform: rotateY(0); }
+    100% { transform: rotateY(-360deg); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-50px); }
+}
+
+@keyframes colorChange {
+0% {
+    background: linear-gradient(45deg, #808080, #2A7697, #000);
+}
+25% {
+    background: linear-gradient(45deg, #2A7697, #000, #808080);
+}
+50% {
+    background: linear-gradient(45deg, #000, #808080, #2A7697);
+}
+75% {
+    background: linear-gradient(45deg, #808080, #2A7697, #000);
+}
+100% {
+    background: linear-gradient(45deg, #2A7697, #000, #808080);
+}
+}
+
+@keyframes moveObject {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+  
+
+@media only screen and (min-width: 960px){
+    h2{
+        text-align: start;
+        width: 18rem;
+        padding-left: 1rem;
+    }
+    h3{
+        width: 13rem;
+    }
+    label{
+        margin-left: 4rem;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .contact{
+        display: flex;
+        justify-content: space-around;
+        background: #2a76979e;
+        margin: 10rem 4rem;
+        box-shadow: 0.5rem -0.6rem 0.8rem 0.5rem #2a76979c;
+        content: "";
+        bottom: 8rem;
+        left: 0rem;
+        background: url(../images/bg_contact.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .form > h2{
+        padding-left: 4rem;
+    }
+    .form-wrap::after{
+        content: "";
+        position: absolute;
+        bottom: 0rem;
+        left: 0rem;
+        background: url('../images/after.png');
+        width: 50rem;
+        height: 16.17rem;
+        background-repeat: no-repeat;
+    }
+    form{
+        text-align: center;
+        width: 32.5rem;
+    }
+    .wrap{
+        width: 33rem;
+        margin: 2rem auto 0rem;
+        height: 10rem;
+    }
+    input[type="text"], textarea{
+        width: 20rem;
+        height: 2rem;
+    }
+    input[type="email"], textarea{
+        width: 20rem;
+        height: 2rem;
+    }
+    textarea{
+        height: 10rem;
+        background-color: #00000048;
+        border: none;
+        width: 19rem;
+    }
+    .form-wrap:hover form{
+        height: 50rem;
+    }
+    .form-wrap:hover{
+        height: 45rem;
+        margin-top: 0rem;
+    }
+    .background_image{
+        height: 45rem;
+    }
+    .crazy-box{
+        padding-top: 12rem;
+    }
+    .contact-form{
+        gap: 14rem;
+    }
+    form{
+        top: 2.5rem;
+        height: 20rem;
+    }
+    .crazy-box-container{
+        margin: 10rem 0;
+    }
+}
+
+
+  

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../detail.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/home.css">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js' crossorigin='anonymous'></script>
+    <script defer src="../../main.js"></script>
+    <title>Detail page</title>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip om naar main te gaan</a>
+<header>
+    <div class="content">
+        <a href="../../">
+            <div>
+                <div class="shoe">
+                    <div class="shoe-inner display-flex align-items">
+                        <img src="../../images/shoe.png" alt="Logo schoen" class="shoe-image no-border-radius img-responsive ">
+                    </div>
+                </div>
+            </div>
+        </a>
+        <button aria-expanded="false" class="hamburger" id="menu">
+            <span aria-hidden="true" class="icon">
+                <span></span><span></span><span></span>
+            </span>
+            <span>Menu</span>
+        </button>
+        <nav>
+            <ul>
+                <li><a id="active" href="../../">Home</a></li>
+                <li><a href="../../about_us/">Over ons</a></li>
+                <li><a href="../../different_shoes/">Schoenen</a></li>
+                <li><a href="../../contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main class="text-sm" id="main-content">
+        <section class="flex flex-wrap gap-1 border bg-light-gray p-2 m-1 text-blue border-thicker">
+            <div class="flex flex-wrap gap-1 bg-light-gray p-2;">
+                <div class="image-container">
+                    <div class="click-image">
+                      <img src="../pictures/runShoes_pink.png" alt="Zijaanzicht schoen" class="detail-shoes-image">
+                      <img src="../pictures/runShoes_pink1.png" alt="Vooraanzicht schoen" class="detail-shoes-image">
+                      <img src="../pictures/runShoes_pink2.png" alt="Achteraanzicht schoen" class="detail-shoes-image">
+                      <p class="text-base text-gray">
+                        3D visualisatie
+                      </p>
+                      <div id="scene-schoen12" class="detail-shoes-image">
+                        <p id="click-text">Click to get the 3D object</p>
+                      </div>
+                    </div>
+                    <div class="first-image">
+                      <img src="../pictures/runShoes_pink.png" alt="Grote afbeelding schoen" class="Image-image">
+                    </div>
+                  </div>
+                <div class="info">
+                    <h1 class="text-xl text-blue">AeroGlide Runner</h1>
+                    <h2 class="align-left text-base text-gray">
+                        AeroGlide Runner - Moeiteloos Hardlopen.
+                    </h2>
+                    <div class="text-lg text-blue">€ 102,99</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="positioning_footer">
+            <a href="../../">
+                <div>
+                    <div class="shoe">
+                        <div class="shoe-inner display-flex align-items">
+                            <img src="../../images/shoe.png" alt="Logo schoen" class="shoe-image no-border-radius img-responsive ">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div>
+                <h3 class="fs-h3 text-align">Locatie:</h3>
+                <ul class="footer_info">
+                    <li class="no-list-style">Sterrestraat 87,</li>
+                    <li class="no-list-style">9160 Lokeren</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="fs-h3 text-align">Telefoonnr.:</h3>
+                <ul class="footer_info">
+                    <li class="no-list-style">Tel.: +32 485 847 101</li>
+                    <li class="no-list-style">Tel.: +32 479 745 341</li>
+                </ul>
+            </div>
+            <div class="social_media">
+                <h3 class="fs-h3 text-align">Sociale media:</h3>
+                <div class="social_media_icons">
+                    <a href="https://www.facebook.com/"><img src="../../images/logo_facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="../../images/logo_instagram.png" alt="instagram"></a>    
+                </div>
+            </div>
+        </div>
+        Footer (c) 2023 Koray Ornek - social media links - copyright - address
+    </footer>
+
+    <script type="module" src="../imageClick.js"></script>
+    <script type="module" src="../three.js"></script>
+</body>
+</html>
