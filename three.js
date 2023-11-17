@@ -3,7 +3,7 @@ import { OrbitControls } from 'https://cdn.skypack.dev/three@0.128.0/examples/js
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/loaders/GLTFLoader.js';
 
 
-// Create a scene
+// Create a scene.
 const scene = new THREE.Scene();
 let shoe;
 // Create a container div
