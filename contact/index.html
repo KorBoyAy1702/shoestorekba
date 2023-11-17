@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js' crossorigin='anonymous'></script>
+    <script defer src="../main.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip om naar main te gaan</a>
+    <header>
+        <div class="content">
+            <a href="../">
+                <div>
+                    <div class="shoe">
+                        <div class="shoe-inner display-flex align-items">
+                            <img src="../images/shoe.png" alt="Logo schoen" class="shoe-image no-border-radius img-responsive ">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <button aria-expanded="false" class="hamburger" id="menu">
+                <span aria-hidden="true" class="icon">
+                    <span></span><span></span><span></span>
+                </span>
+                <span>Menu</span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a id="active" href="../">Home</a></li>
+                    <li><a href="../about_us/">Over ons</a></li>
+                    <li><a href="../different_shoes/">Schoenen</a></li>
+                    <li><a href="../contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" id="main-content">
+        <section>
+            <h1 class="text-center fs-h1">Contact us</h1>
+            <div class="contact">
+                <div class="background-image">
+                    <div class="contact-form">
+                        <div class="wrap">
+                            <div class="form-wrap">
+                                <form class="form" id="contact" action="#" novalidate>
+                                    <div class="sending">Uw bericht is verstuurd!</div>
+
+                                    <h2 class="font-size-1-2rem">Stel je vraag!</h2>
+                                    <div>
+                                        <label for="naam">
+                                            <span class="field-label text-accent font-size-1rem">Naam</span>
+                                        </label>
+                                        <input type="text" name="naam" id="naam" required>
+                                    </div>
+                        
+                                    <div>
+                                        <label for="email">
+                                            <span class="field-label text-accent font-size-1rem">E-mail</span>
+                                        </label>
+                                        <input type="email" name="email" id="email" required>
+                                    </div>
+                        
+                                    <div>
+                                        <label for="bericht">
+                                            <span class="field-label text-accent font-size-1rem">Bericht</span>
+                                        </label>
+                                        <textarea name="bericht" id="bericht" cols="30" rows="10" required></textarea>
+                                    </div>
+                        
+                                    <div>
+                                        <button class="button" type="submit">Verstuur</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+        
+                        <div class="reverse_contact_info">
+                            <div>
+                                <div class="crazy-box-container">
+                                    <div class="crazy-box">
+                                        <div class="crazy-box-face front">Aarzel niet</div>
+                                        <div class="crazy-box-face back">op te</div>
+                                        <div class="crazy-box-face left">om contact</div>
+                                        <div class="crazy-box-face right">nemen!</div>
+                                        <div class="crazy-box-face top"></div>
+                                        <div class="crazy-box-face bottom"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="positioning_footer">
+            <a href="../">
+                <div>
+                    <div class="shoe">
+                        <div class="shoe-inner display-flex align-items">
+                            <img src="../images/shoe.png" alt="Logo schoen" class="shoe-image no-border-radius img-responsive ">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div>
+                <h3 class="fs-h3 text-align">Locatie:</h3>
+                <ul class="footer_info">
+                    <li class="no-list-style">Sterrestraat 87,</li>
+                    <li class="no-list-style">9160 Lokeren</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="fs-h3 text-align">Telefoonnr.:</h3>
+                <ul class="footer_info">
+                    <li class="no-list-style">Tel.: +32 485 847 101</li>
+                    <li class="no-list-style">Tel.: +32 479 745 341</li>
+                </ul>
+            </div>
+            <div class="social_media">
+                <h3 class="fs-h3 text-align">Sociale media:</h3>
+                <div class="social_media_icons">
+                    <a href="https://www.facebook.com/"><img src="../images/logo_facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="../images/logo_instagram.png" alt="instagram"></a>    
+                </div>
+            </div>
+        </div>
+        Footer (c) 2023 Koray Ornek - social media links - copyright - address
+    </footer>
+    <script type="module" src="../contact.js"></script>
+</body>
+</html>
